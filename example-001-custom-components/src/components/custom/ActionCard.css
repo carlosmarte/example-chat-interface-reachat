@@ -1,0 +1,132 @@
+.custom-action-card {
+  background: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.2s ease;
+}
+
+.custom-action-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-action-card-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.custom-action-card-icon {
+  font-size: 32px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.custom-action-card-text {
+  flex: 1;
+}
+
+.custom-action-card-title {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.custom-action-card-description {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.custom-action-card-button {
+  align-self: flex-start;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.custom-action-card-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Variant styles */
+.custom-action-card--default {
+  background: #f8f9fa;
+  border-color: #e0e0e0;
+}
+
+.custom-action-card-button--default {
+  background: #007bff;
+  color: white;
+}
+
+.custom-action-card-button--default:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+.custom-action-card--primary {
+  background: #e3f2fd;
+  border-color: #90caf9;
+}
+
+.custom-action-card-button--primary {
+  background: #2196f3;
+  color: white;
+}
+
+.custom-action-card-button--primary:hover:not(:disabled) {
+  background: #1976d2;
+}
+
+.custom-action-card--success {
+  background: #e8f5e9;
+  border-color: #a5d6a7;
+}
+
+.custom-action-card-button--success {
+  background: #4caf50;
+  color: white;
+}
+
+.custom-action-card-button--success:hover:not(:disabled) {
+  background: #388e3c;
+}
+
+.custom-action-card--warning {
+  background: #fff3e0;
+  border-color: #ffcc80;
+}
+
+.custom-action-card-button--warning {
+  background: #ff9800;
+  color: white;
+}
+
+.custom-action-card-button--warning:hover:not(:disabled) {
+  background: #f57c00;
+}
+
+.custom-action-card--danger {
+  background: #ffebee;
+  border-color: #ef9a9a;
+}
+
+.custom-action-card-button--danger {
+  background: #f44336;
+  color: white;
+}
+
+.custom-action-card-button--danger:hover:not(:disabled) {
+  background: #d32f2f;
+}
